@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momentum_Clone-coding</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class="main-content">
+      <div class="greeting-content">
+        <h1 class="time-txt"><span class="amPm" id="apm"></span><span id="clock">00:00:00</span></h1>
+        <h2 class="say-hello" id="greeting" class="hidden"></h2>
+        <form class="hidden name-form" id="login-form">
+          <input class="box_write-name" required maxlength="15" value="" type="text" placeholder="What is your name?">
+          <input class="box_submit" type="submit" value="Submit"></input>
+        </form>
+      </div>
+      <div class="todo-content">
+      <div class="box_write-todo">
+        <form id="todo-form" action="">
+          <input id="todo-input" type="text" placeholder="Write a 'To Do' and Press Enter" required autocomplete="off">
+        </form>
+      </div>
+      <ul class="todoList" id="todo-list"></ul>
+    </div>
+    </div>
+
+    <div class="quote_txt" id="quote">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <div class="weather_txt" id="weather">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="bg" id="section-bg"></div>
+  </section>
+
+
+
+  <!-- script -->
+  <script src="./js/greetings.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/quotes.js"></script>
+  <script src="./js/background.js"></script>
+  <!-- <script src="./js/todo.js"></script> -->
+  <script src="./js/todo-practice.js"></script>
+  <script src="./js/weather.js"></script>
+</body>
+
+</html>

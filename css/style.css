@@ -1,0 +1,192 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+}
+
+.hidden {
+  display: none !important;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -10;
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(227deg, rgba(2,0,36,0.6) 0%, rgba(0,0,0,0.4) 35%, rgba(0,0,0,0) 100%);
+}
+
+.bg img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.main-content {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.greeting-content {
+  font-size: 10vw;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.time-txt {
+  text-shadow: 0 0 5px rgba(2,0,36,0.4);
+  text-transform: uppercase;
+  padding: 2rem 0;
+}
+
+.say-hello {
+  font-size: 6vw;
+}
+
+.name-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_write-name {
+  border: none;
+  width: 60%;
+  padding: 1rem 2rem;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 2rem;
+}
+
+.box_submit {
+  padding : 1rem 2rem;
+  border-radius: 2rem;
+  border-style: none;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(2,0,36,0.4);
+  color: rgba(0,0,0,0.8);
+  font-size: large;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: .3s;
+}
+
+.box_submit:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.todo-content {
+  padding: 2rem;
+}
+
+.box_write-todo {
+  width: 100%;
+  position: relative;
+}
+
+.box_write-todo input {
+  width: 100%;
+  background-color: transparent;
+  border-style: none;
+  padding: 1rem 2rem;
+  border-bottom: 1.5px solid white;
+  color: white;
+  transition: .3s;
+}
+
+.box_write-todo input:focus {
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 1rem;
+}
+
+.box_write-todo input::placeholder {
+  color: white;
+  font-size: large;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+.todoList li {
+  padding: 1rem 1rem 1rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.todoList li::before {
+  content: "●";
+  position: absolute;
+  font-size: 0.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1rem;
+}
+
+.todoList li button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.quote_txt {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  text-align: center;
+}
+
+.quote_txt span {
+  display: block;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+  font-size: smaller;
+}
+
+.weather_txt {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  right: 0;
+  top: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.weather_txt span {
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+}
