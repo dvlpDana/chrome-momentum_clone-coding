@@ -1,3 +1,7 @@
+:root {
+  font-size: 16px;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: white;
@@ -38,7 +42,6 @@ section {
 }
 
 .bg img {
-  min-width: 100%;
   min-height: 100%;
 }
 
@@ -163,13 +166,13 @@ section {
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
-  width: 50%;
+  width: 90%;
   text-align: center;
 }
 
 .quote_txt span {
   display: block;
-  white-space: nowrap;
+  word-break: keep-all;
   padding: 0.5rem 0;
   font-size: smaller;
 }
@@ -178,8 +181,8 @@ section {
   position: absolute;
   width: 10%;
   height: 10%;
-  right: 0;
-  top: 0;
+  right: 1rem;
+  top: 1rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -189,4 +192,22 @@ section {
 .weather_txt span {
   padding: 0.5rem 0;
   text-transform: uppercase;
+}
+
+@media (max-width : 780px) {
+  :root {
+    font-size: 12px;
+  }
+
+  .main-content {
+    width: 90%;
+  }
+
+  .box_submit {
+    font-size: small;
+  }
+
+  #todo-input::placeholder {
+    font-size: 1rem;
+  }
 }
